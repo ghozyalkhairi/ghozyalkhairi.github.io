@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "MyWeatherID",
+    "description": "MyWeatherID is a weather app that allows users to search for weather information by city name in Indonesia. This app is built using React Native for the mobile app and Next.js for the web app.",
+    "platform": ["Web", "Mobile"],
+    "github": [
+      {
+        "platform": "Web",
+        "url": "https://github.com/ghozyalkhairi/MyWeatherID-Web"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "SIJAKOM",
+    "description": "SIJAKOM is a web app that allows both students and lecturers in Universitas Muhammadiyah Pontianak to know the schedule of computer laboratory usage. This app is built using Next.js",
+    "platform": ["Web"],
+    "github": [
+      {
+        "platform": "Web",
+        "url": "https://github.com/ghozyalkhairi/sijakom"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "KuyChat",
+    "description": "KuyChat is a web app that allows users to chat with other users. This app is built using Next.js",
+    "platform": ["Web"],
+    "github": [
+      {
+        "platform": "Web",
+        "url": "https://github.com/ghozyalkhairi/kuychat"
+      }
+    ]
+  }
+]
