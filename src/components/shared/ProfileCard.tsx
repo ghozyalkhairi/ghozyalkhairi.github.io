@@ -1,5 +1,5 @@
-import { Box, Text, useColorMode } from "@chakra-ui/react"
-import Image from "next/image"
+import { Box, Text, useColorMode, Link } from "@chakra-ui/react"
+import { Image } from "@chakra-ui/next-js"
 import { FC } from "react"
 import ProfilePhoto from "@/assets/png/foto.png"
 import GitHubIcon from "@/assets/icons/GitHubIcon"
@@ -36,21 +36,23 @@ const ProfileCard: FC = () => {
         gap="8"
         mt="8"
       >
-        <InstagramIcon
-          fill={colorMode === "light" ? "#151515" : "#F2F2F2"}
-          height="30"
-          width="30"
-        />
-        <GitHubIcon
-          fill={colorMode === "light" ? "#151515" : "#F2F2F2"}
-          height="30"
-          width="30"
-        />
-        <LinkedInIcon
-          fill={colorMode === "light" ? "#151515" : "#F2F2F2"}
-          height="30"
-          width="30"
-        />
+        <Link href="https://github.com/ghozyalkhairi" isExternal>
+          <GitHubIcon
+            fill={colorMode === "light" ? "#151515" : "#F2F2F2"}
+            height="30"
+            width="30"
+          />
+        </Link>
+        <Link
+          href="https://www.linkedin.com/in/muhammad-ghozy-alkhairi/"
+          isExternal
+        >
+          <LinkedInIcon
+            fill={colorMode === "light" ? "#151515" : "#F2F2F2"}
+            height="30"
+            width="30"
+          />
+        </Link>
       </Box>
     </Box>
   )

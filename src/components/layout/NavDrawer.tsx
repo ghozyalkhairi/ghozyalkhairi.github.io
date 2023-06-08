@@ -7,8 +7,11 @@ import {
   DrawerCloseButton,
   Text,
   useColorMode,
+  Box,
+  Divider,
 } from "@chakra-ui/react"
 import { FC } from "react"
+import { Link } from "@chakra-ui/next-js"
 
 interface Props {
   isOpen: boolean
@@ -27,10 +30,35 @@ const NavDrawer: FC<Props> = ({ isOpen, onClose }) => {
         }
       >
         <DrawerCloseButton />
-        <DrawerHeader>Ghozy Alkhairi</DrawerHeader>
+        <DrawerHeader>
+          <Text fontSize="2xl" fontWeight="bold">
+            Menu
+          </Text>
+        </DrawerHeader>
 
         <DrawerBody>
-          <Text>Work In Progress</Text>
+          <Box
+            display="flex"
+            justifyContent="flex-start"
+            alignItems="flex-start"
+            flexDir="column"
+            w="100%"
+            h="100%"
+            gap="2"
+          >
+            <Link href="/" onClick={onClose} w="100%">
+              <Text fontSize="lg" mb="4">
+                Home
+              </Text>
+              <Divider w="100%" />
+            </Link>
+            <Link href="/certification" onClick={onClose} w="100%">
+              <Text fontSize="lg" mb="4">
+                Certifications
+              </Text>
+              <Divider w="100%" />
+            </Link>
+          </Box>
         </DrawerBody>
       </DrawerContent>
     </Drawer>

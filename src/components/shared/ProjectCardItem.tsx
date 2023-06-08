@@ -1,4 +1,5 @@
-import { Box, Text, useColorMode } from "@chakra-ui/react"
+import LinkIcon from "@/assets/icons/LinkIcon"
+import { Box, Text, useColorMode, Link } from "@chakra-ui/react"
 import { FC } from "react"
 
 interface Props {
@@ -52,18 +53,24 @@ const ProjectCardItem: FC<Props> = ({
         justifyContent="flex-start"
         alignItems="center"
       >
-        {platform.map((item, index) => (
-          <Box
-            key={`${item}-${index}`}
-            bg="brand.muted"
-            borderRadius="lg"
-            p="2"
-            m="2"
-          >
-            <Text color="brand.accent" fontSize="md">
-              {item}
-            </Text>
-          </Box>
+        {github.map((item, index) => (
+          <Link href={item.url} key={`${item}-${index}`}>
+            <Box
+              bg="brand.muted"
+              borderRadius="lg"
+              p="2"
+              m="2"
+              display="flex"
+              justifyContent="space-between"
+              alignItems="center"
+              gap="2"
+            >
+              <Text color="brand.accent" fontSize="md">
+                {item.platform}
+              </Text>
+              <LinkIcon width="16" height="16" fill="#151515" />
+            </Box>
+          </Link>
         ))}
       </Box>
     </Box>

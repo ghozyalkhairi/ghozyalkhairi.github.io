@@ -21,7 +21,7 @@ const AboutMe: FC = () => {
       </Text>
       <Text fontSize="lg" my="2">
         I'm Ghozy, an enthusiastic Informatics Engineering college student
-        hailing from Indonesia. As a newbie web and mobile developer, I have
+        hailing from Indonesia. As an aspiring web and mobile developer, I have
         been exploring the fascinating world of coding since 2021. My primary
         focus lies in leveraging the power of React.js and React Native to
         create innovative and user-friendly applications.

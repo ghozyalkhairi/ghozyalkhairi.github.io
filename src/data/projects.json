@@ -8,6 +8,10 @@
       {
         "platform": "Web",
         "url": "https://github.com/ghozyalkhairi/MyWeatherID-Web"
+      },
+      {
+        "platform": "Mobile",
+        "url": "https://github.com/ghozyalkhairi/MyWeatherID-Android"
       }
     ]
   },

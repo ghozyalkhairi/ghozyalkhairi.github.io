@@ -1,11 +1,10 @@
-import Head from "next/head"
-import { Box, Text } from "@chakra-ui/react"
 import BaseLayout from "@/components/layout/BaseLayout"
-import ProfileCard from "@/components/shared/ProfileCard"
-import AboutMe from "@/components/shared/AboutMe"
-import FeaturedProjects from "@/components/shared/FeaturedProjects"
+import CertificationList from "@/components/shared/CertificationList"
+import { Box, Text } from "@chakra-ui/react"
+import { NextPage } from "next"
+import Head from "next/head"
 
-export default function Home() {
+const Certification: NextPage = () => {
   return (
     <>
       <Head>
@@ -15,10 +14,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <BaseLayout>
-        <ProfileCard />
-        <AboutMe />
-        <FeaturedProjects />
+        <CertificationList />
       </BaseLayout>
     </>
   )
 }
+
+export default Certification
