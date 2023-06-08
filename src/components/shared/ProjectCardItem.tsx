@@ -54,7 +54,7 @@ const ProjectCardItem: FC<Props> = ({
         alignItems="center"
       >
         {github.map((item, index) => (
-          <Link href={item.url} key={`${item}-${index}`}>
+          <Link href={item.url} key={`${item}-${index}`} isExternal>
             <Box
               bg="brand.muted"
               borderRadius="lg"
