@@ -1,9 +1,9 @@
-import { FC } from "react"
+import { FC } from "react";
 
 interface Props {
-  fill: string
-  height: string
-  width: string
+  fill: string;
+  height: string;
+  width: string;
 }
 
 const InstagramIcon: FC<Props> = ({
@@ -24,7 +24,7 @@ const InstagramIcon: FC<Props> = ({
         fill={fill}
       />
     </svg>
-  )
-}
+  );
+};
 
-export default InstagramIcon
+export default InstagramIcon;
