@@ -22,5 +22,23 @@
     "name": "EF SET English Certificate - C2 Proficient",
     "url": "https://www.efset.org/cert/xZWRKr",
     "image": "https://i.ibb.co/MG77HX4/EF.jpg"
+  },
+  {
+    "id": 5,
+    "name": "JavaScript Algorithms and Data Structures - Free Code Camp",
+    "url": "https://www.freecodecamp.org/certification/ghozyalkhairi/javascript-algorithms-and-data-structures",
+    "image": "https://i.ibb.co/3rqjF7D/FCC2.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Belajar Dasar Pemrograman Web - Dicoding",
+    "url": "https://www.dicoding.com/certificates/1OP81W1V8ZQK",
+    "image": "https://i.ibb.co/1Gd6vG9/Dicoding-1.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Belajar Dasar Pemrograman JavaScript - Dicoding",
+    "url": "https://www.dicoding.com/certificates/07Z680V1MXQR",
+    "image": "https://i.ibb.co/Bcrr2gV/Dicoding-2.jpg"
   }
 ]

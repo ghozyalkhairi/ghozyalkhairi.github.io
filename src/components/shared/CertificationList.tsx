@@ -1,10 +1,11 @@
-import { FC } from "react"
-import { Box, Text, useColorMode } from "@chakra-ui/react"
-import certifications from "@/data/certs.json"
-import CertificationItem from "./CertificationItem"
+import { FC } from "react";
+import { Box, Text, useColorMode, Grid, GridItem } from "@chakra-ui/react";
+import certifications from "@/data/certs.json";
+import CertificationItem from "./CertificationItem";
 
 const CertificationList: FC = () => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
+  const reversed = [...certifications].reverse();
   return (
     <Box
       w="100%"
@@ -21,29 +22,29 @@ const CertificationList: FC = () => {
       >
         CERTIFICATIONS
       </Text>
-      <Box
-        display="flex"
-        flexDir={{
-          base: "column",
-          md: "row",
+      <Grid
+        templateColumns={{
+          base: "repeat(1, 1fr)",
+          md: "repeat(2, 1fr)",
+          lg: "repeat(3, 1fr)",
+          xl: "repeat(4, 1fr)",
         }}
-        justifyContent="flex-start"
-        alignItems="center"
+        gap={4}
+        mt="4"
         w="100%"
-        gap="8"
-        mt="8"
       >
-        {certifications.map((cert) => (
-          <CertificationItem
-            key={cert.name}
-            name={cert.name}
-            url={cert.url}
-            image={cert.image}
-          />
+        {reversed.map((cert) => (
+          <GridItem key={cert.name}>
+            <CertificationItem
+              name={cert.name}
+              url={cert.url}
+              image={cert.image}
+            />
+          </GridItem>
         ))}
-      </Box>
+      </Grid>
     </Box>
-  )
-}
+  );
+};
 
-export default CertificationList
+export default CertificationList;

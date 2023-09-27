@@ -1,9 +1,8 @@
-import Head from "next/head"
-import { Box, Text } from "@chakra-ui/react"
-import BaseLayout from "@/components/layout/BaseLayout"
-import ProfileCard from "@/components/shared/ProfileCard"
-import AboutMe from "@/components/shared/AboutMe"
-import FeaturedProjects from "@/components/shared/FeaturedProjects"
+import Head from "next/head";
+import BaseLayout from "@/components/layout/BaseLayout";
+import ProfileCard from "@/components/shared/ProfileCard";
+import AboutMe from "@/components/shared/AboutMe";
+import FeaturedProjects from "@/components/shared/FeaturedProjects";
 
 export default function Home() {
   return (
@@ -20,5 +19,5 @@ export default function Home() {
         <FeaturedProjects />
       </BaseLayout>
     </>
-  )
+  );
 }
