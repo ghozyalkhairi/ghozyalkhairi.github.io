@@ -40,5 +40,17 @@
     "name": "Belajar Dasar Pemrograman JavaScript - Dicoding",
     "url": "https://www.dicoding.com/certificates/07Z680V1MXQR",
     "image": "https://i.ibb.co/Bcrr2gV/Dicoding-2.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Belajar Membuat Front-End Web untuk Pemula - Dicoding",
+    "url": "https://www.dicoding.com/certificates/N9ZO5M92DPG5",
+    "image": "https://i.ibb.co/7vbPML0/Dicoding-3.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Belajar Membuat Aplikasi Web dengan React - Dicoding",
+    "url": "https://www.dicoding.com/certificates/1RXY0LLGKZVM",
+    "image": "https://i.ibb.co/QCKcHXp/Dicoding-4.jpg"
   }
 ]
