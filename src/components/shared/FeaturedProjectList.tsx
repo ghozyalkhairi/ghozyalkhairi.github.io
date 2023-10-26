@@ -15,13 +15,7 @@ const FeaturedProjectList: FC = () => {
       mt="4"
     >
       {projects.map((project) => (
-        <ProjectCardItem
-          key={project.id}
-          name={project.name}
-          description={project.description}
-          platform={project.platform}
-          github={project.github}
-        />
+        <ProjectCardItem key={project.id} {...project} />
       ))}
     </Box>
   )

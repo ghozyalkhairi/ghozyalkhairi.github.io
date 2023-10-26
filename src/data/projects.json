@@ -13,7 +13,8 @@
         "platform": "Mobile",
         "url": "https://github.com/ghozyalkhairi/MyWeatherID-Android"
       }
-    ]
+    ],
+    "image": "https://i.ibb.co/Kw5KrJx/myweather.jpg"
   },
   {
     "id": 2,
@@ -25,7 +26,8 @@
         "platform": "Web",
         "url": "https://github.com/ghozyalkhairi/sijakom"
       }
-    ]
+    ],
+    "image": "https://i.ibb.co/6gNMsXN/sijakom.jpg"
   },
   {
     "id": 3,
@@ -37,6 +39,7 @@
         "platform": "Web",
         "url": "https://github.com/ghozyalkhairi/kuychat"
       }
-    ]
+    ],
+    "image": "https://i.ibb.co/5FyK813/kuychat.jpg"
   }
 ]

@@ -10,7 +10,7 @@ const AboutMe: FC = () => {
       flexDir="column"
       justifyContent="center"
       alignItems="flex-start"
-      mt="12"
+      mt="8"
     >
       <Text
         fontSize="xl"
