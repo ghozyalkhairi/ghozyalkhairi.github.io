@@ -1,15 +1,15 @@
-import { Box, Text, useColorMode, Link } from "@chakra-ui/react"
-import { Image } from "@chakra-ui/next-js"
-import { FC } from "react"
-import ProfilePhoto from "@/assets/png/foto.png"
-import GitHubIcon from "@/assets/icons/GitHubIcon"
-import LinkedInIcon from "@/assets/icons/LinkedInIcon"
-import InstagramIcon from "@/assets/icons/InstagramIcon"
-import LogoLight from "@/assets/png/logo-light.png"
-import LogoDark from "@/assets/png/logo-dark.png"
+import { Box, Text, useColorMode, Link } from "@chakra-ui/react";
+import { Image } from "@chakra-ui/next-js";
+import { FC } from "react";
+import ProfilePhoto from "@/assets/png/foto.png";
+import GitHubIcon from "@/assets/icons/GitHubIcon";
+import LinkedInIcon from "@/assets/icons/LinkedInIcon";
+import InstagramIcon from "@/assets/icons/InstagramIcon";
+import LogoLight from "@/assets/png/logo-light.png";
+import LogoDark from "@/assets/png/logo-dark.png";
 
 const ProfileCard: FC = () => {
-  const { colorMode } = useColorMode()
+  const { colorMode } = useColorMode();
   return (
     <Box
       w="100%"
@@ -72,16 +72,8 @@ const ProfileCard: FC = () => {
           mt="2"
           color={colorMode === "light" ? "brand.mutedLight" : "brand.muted"}
         >
-          Web & Mobile Developer at
+          Web & Mobile Developer
         </Text>
-        <Link href="https://itkonsultan.co.id/" isExternal>
-          <Image
-            src={colorMode === "light" ? LogoLight : LogoDark}
-            alt="Logo"
-            width={110}
-            height={10}
-          />
-        </Link>
       </Box>
       <Box
         display="flex"
@@ -117,7 +109,7 @@ const ProfileCard: FC = () => {
         </Link>
       </Box>
     </Box>
-  )
-}
+  );
+};
 
-export default ProfileCard
+export default ProfileCard;
